@@ -18,6 +18,8 @@ struct ContentView: View {
     @State var showPunchline = false
     @State var showExplainer = false
     @State var currentJoke = 0
+    @State var isFeedbackPresented = false
+    
     var body: some View {
         ZStack {
             Color(.systemBackground)
@@ -26,6 +28,7 @@ struct ContentView: View {
                         currentJoke += 1
                         showPunchline = false
                         showExplainer = false
+                        isFeedbackPresented = true
                     }
                 }
             VStack{
@@ -79,6 +82,14 @@ struct ContentView: View {
                 .foregroundColor(Color(red: 0.4, green: 0.4, blue: 0.4))
                 }
             }
+        }
+        .alert(isPresented: $isFeedbackPresented){
+            Alert(title: Text("Did you like that joke?"),
+                  primaryButton: .default(Text("Haha so funny!")){
+                print("User liked joke")
+            }, secondaryButton: .default(Text("I need vomit")){
+                print("You are a joke")
+            })
         }
     }
 }
