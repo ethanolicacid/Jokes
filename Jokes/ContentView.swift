@@ -60,7 +60,7 @@ struct ContentView: View {
                             .font(.title3)
                         Spacer()
                         Button{
-                            print("Button tapped")
+                            print("User pressed for suicide punchline")
                             showExplainer = true
                         } label:{
                             Text("Huh?")
@@ -86,7 +86,7 @@ struct ContentView: View {
         .alert(isPresented: $isFeedbackPresented){
             Alert(title: Text("Did you like that joke?"),
                   primaryButton: .default(Text("Haha so funny!")){
-                print("User liked joke")
+                print("You are amazing")
             }, secondaryButton: .default(Text("I need vomit")){
                 print("You are a joke")
             })
