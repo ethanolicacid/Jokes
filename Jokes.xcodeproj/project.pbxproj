@@ -12,6 +12,7 @@
 		745A2A902870417F003AD4C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 745A2A8F2870417F003AD4C3 /* Assets.xcassets */; };
 		745A2A932870417F003AD4C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 745A2A922870417F003AD4C3 /* Preview Assets.xcassets */; };
 		745A2A9A28704375003AD4C3 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745A2A9928704375003AD4C3 /* Joke.swift */; };
+		74DDE25D28752C80006DA1DE /* FeedbackResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDE25C28752C80006DA1DE /* FeedbackResponseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		745A2A8F2870417F003AD4C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		745A2A922870417F003AD4C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		745A2A9928704375003AD4C3 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		74DDE25B28752AD3006DA1DE /* Jokes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jokes.entitlements; sourceTree = "<group>"; };
+		74DDE25C28752C80006DA1DE /* FeedbackResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackResponseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +56,12 @@
 		745A2A8A2870417D003AD4C3 /* Jokes */ = {
 			isa = PBXGroup;
 			children = (
+				74DDE25B28752AD3006DA1DE /* Jokes.entitlements */,
 				745A2A8B2870417D003AD4C3 /* JokesApp.swift */,
 				745A2A8D2870417D003AD4C3 /* ContentView.swift */,
 				745A2A9928704375003AD4C3 /* Joke.swift */,
 				745A2A8F2870417F003AD4C3 /* Assets.xcassets */,
+				74DDE25C28752C80006DA1DE /* FeedbackResponseView.swift */,
 				745A2A912870417F003AD4C3 /* Preview Content */,
 			);
 			path = Jokes;
@@ -140,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DDE25D28752C80006DA1DE /* FeedbackResponseView.swift in Sources */,
 				745A2A8E2870417D003AD4C3 /* ContentView.swift in Sources */,
 				745A2A8C2870417D003AD4C3 /* JokesApp.swift in Sources */,
 				745A2A9A28704375003AD4C3 /* Joke.swift in Sources */,
@@ -268,6 +274,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Jokes/Jokes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jokes/Preview Content\"";
@@ -286,9 +293,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sg.tk.Jokes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -297,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Jokes/Jokes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jokes/Preview Content\"";
@@ -315,9 +324,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sg.tk.Jokes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};

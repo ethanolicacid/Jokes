@@ -18,10 +18,14 @@ struct ContentView: View {
     @State var showPunchline = false
     @State var showExplainer = false
     @State var currentJoke = 0
+    
     @State var isFeedbackPresented = false
     
+    @State var isFeedbackPositive = false
+    @State var isFeedbackResponsePresented = false
+    
     var body: some View {
-        ZStack {
+        ZStack{
             Color(.systemBackground)
                 .onTapGesture {
                     if showPunchline{
@@ -85,15 +89,14 @@ struct ContentView: View {
         }
         .alert(isPresented: $isFeedbackPresented){
             Alert(title: Text("Did you like that joke?"),
-                  primaryButton: .default(Text("Haha so funny!")){
-                print("You are amazing")
-            }, secondaryButton: .default(Text("I need vomit")){
-                print("You are a joke")
-            })
+                primaryButton: .default(Text("It was amazing")){
+                print("User is good")
+            }, secondaryButton: .default(Text("I need to vomit")){
+                print("User is rubbish")
+                })
         }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
