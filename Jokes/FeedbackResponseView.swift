@@ -10,7 +10,12 @@ import SwiftUI
 struct FeedbackResponseView: View {
     var body: some View {
         VStack{
-            Text("Hello world!")
+            Image("happy")
+                .resizable()
+                .scaledToFit()
+            Text("You are amazing!")
+                .font(.title3)
+                .padding()
         }
     }
 }
