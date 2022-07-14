@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseFile</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/Template.playgroundpage/main.swift</string>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//func Macism(Item1: String, Item2: String){
+//    print("Hello I'm a Mac")
+//    print("Hi I'm a PC")
+//    print("Get out, PC!")
+//}
+//
+//Macism()
+//
+//
+//func Macism(for Item1: String, withItem2 Item2: String){
+//    print("Hello I'm a \(Item1)")
+//    print("Hi I'm a \(Item2)")
+//    print("Get out, \(Item2)")
+//}
+//
+//Macism(for: "Mac", withItem2: "iPad")
+
+//Exercise 4
+func TwoNumberStory(num1: Int, num2: Int){
+    print("Once upon a time, there were \(num1) bowls of watermelon on the table. Brew install blender, now there are \(num2) glasses of orange juice below the fridge.")
+}
+TwoNumberStory(num1: 78, num2: 3)
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 628}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

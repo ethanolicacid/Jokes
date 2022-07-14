@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseFile</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/Template.playgroundpage/main.swift</string>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>struct Car{
+    // Properties of a car
+    var brand: String
+    var model: String
+    var num_of_wheels: Int
+    var top_speed: Double
+    var isOnFire: Bool
+    // Functions of a car (Methods)
+    func startEngine(){
+        print("Vroom vroom")
+    }
+    func horn(){
+        print("Beep beep")
+    }
+    func train_horn(){
+        print("BEEP BEEP")
+    }
+    func crash(){
+        print("Oh no the car crashed")
+        print("Is the car exploded")
+        if isOnFire == true{
+            print("🔥🔥🔥")
+        }else{
+            print("It's fine")
+        }
+    }
+    func accelerate(to speed: Double){
+        if speed&gt;top_speed{
+            print("The \(brand) \(model) is going \(top_speed) km/h!")
+        }else{
+            print("The \(brand) \(model) is going at a turtlely pace of \(speed) km/h.")
+        }
+    }
+    func describe(){
+        if isOnFire == false{
+            print("The car is a \(brand) \(model). It has \(num_of_wheels) wheels and goes a top speed of \(top_speed) km/h. It is not on fire")
+        }else{
+            print("The car is a \(brand) \(model). It has \(num_of_wheels) wheels and goes a top speed of \(top_speed) km/h. It is on fire so rescue it quick.")
+        }
+    }
+    func compare_speed(){
+        if car3.top_speed &gt; car4.top_speed{
+            print("The \(car3.brand) \(car3.model) is faster than the \(car4.brand) \(car4.model).")
+        }else if car3.top_speed &lt; car4.top_speed{
+            print("The \(car4.brand) \(car4.model) is faster than the \(car3.brand) \(car3.model).")
+        }else if car3.top_speed==car4.top_speed{
+            print("They are the same")
+        }
+    }
+}
+
+let car1 = Car(brand: "Lucid", model: "Air M1", num_of_wheels: 4, top_speed: 320.5, isOnFire: false)
+
+var car2 = Car(brand: "Matchbox", model: "Toaster", num_of_wheels: 17, top_speed: 9.0, isOnFire: true)
+
+var car3 = Car(brand: "McLaren", model: "F1", num_of_wheels: 4, top_speed: 386.24, isOnFire: false)
+
+var car4 = Car(brand: "Ford", model: "Pinto", num_of_wheels: 4, top_speed: 154.00, isOnFire: true)
+
+car2.num_of_wheels = 19
+
+print(car2.brand)
+print(car2)
+car2.crash()
+car2.startEngine()
+car2.accelerate(to: 320.6)
+car2.train_horn()
+car3.describe()
+car2.compare_speed()
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 2224}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

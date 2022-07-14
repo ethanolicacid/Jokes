@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseFile</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/Template.playgroundpage/main.swift</string>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>////Exercise A
+//
+//var number1 = 10
+//var number2 = 20
+//
+//func SumExplainer(num1: Int, num2: Int){
+//    print("The first number is \(num1)!")
+//    print("The second number is \(num2)!")
+//    print("The sum of the two numbers are \(num1 + num2)!!!!!")
+//}
+//
+//SumExplainer(num1: number1, num2: number2)
+
+//// Exercise B
+
+var width = 20
+var height = 40
+var x = 5
+var y = 6
+
+func AreaOfL(XAxisLength: Int, YAxisLength: Int, XTerm: Int, YTerm: Int){
+    var XbyHeight = XTerm*YAxisLength
+    let width2 = XAxisLength-x
+    var RemainingSection = YTerm*width2
+    let totalArea = XbyHeight+RemainingSection
+    print(totalArea)
+}
+
+AreaOfL(XAxisLength: width, YAxisLength: height, XTerm: 5, YTerm: 6)
+
+import Foundation
+
+let numbr = sqrt(64)
+print(numbr)
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 756}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

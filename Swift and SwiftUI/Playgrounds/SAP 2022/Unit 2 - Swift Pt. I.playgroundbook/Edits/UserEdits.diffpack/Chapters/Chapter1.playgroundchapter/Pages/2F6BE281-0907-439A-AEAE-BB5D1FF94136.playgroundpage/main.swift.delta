@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseFile</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/Template.playgroundpage/main.swift</string>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>let addition = 3+9
+let subtraction = 13-20
+let multiplication = 6*9
+
+//Integer division, ignores decimal places in actual answer
+let division = 50/20
+let divisionA = 50%20 // Modulo division, gives remainder
+
+
+//Workarounds to get actual answer
+let a = 50.0
+let b = 20.0
+let division2 = a/b
+let division3 = 50.0/20
+
+let c: Double = 50.0
+let d: Int = 20
+//let division4 = c/d (This will result in an error) 
+let division4  = c/Double(d)
+
+// Order of operation is BODMAS
+
+//let test1 = 5/2
+//let test2 = 5.0/2
+//let test3 = 5/2.0
+//let test4 = 5.0/2.0
+//let test5 = 5.00/2.0
+//let test6 = 5.00/2.00
+
+
+
+//// Exercise 2
+
+var numberOfMacBooks = 10
+var numberOfDevicesForChildren = 10
+
+// Two MacBooks became a NotchBook. Their hideous appearance/design got it kicked out of the family of MacBooks and no one liked it ever since. One of the MacBooks ate a lot out of depressment.
+
+numberOfMacBooks = numberOfMacBooks-1
+numberOfMacBooks -= 1
+
+
+// A kindergarten teacher bought more M1 iPad Pros because it is so Pro a child could use it.
+
+numberOfDevicesForChildren = numberOfDevicesForChildren*2
+
+var total = numberOfMacBooks+numberOfDevicesForChildren
+
+// What if someone eats an iPad
+// Human baby. Supercharged by the Apple M1 chip.
+
+numberOfDevicesForChildren = numberOfDevicesForChildren-2
+
+// How many devices are there in an egg basket now?
+
+total
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1349}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

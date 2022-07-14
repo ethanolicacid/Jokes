@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import PlaygroundSupport
+import SwiftUI 
+
+struct MyView: View {
+    
+    var body: some View {
+        ZStack{
+            LinearGradient(colors: [.white, .purple, Color(red: 153/255, green: 90/255, blue: 146/255), .purple, .white], startPoint: .topLeading, endPoint: .bottomTrailing)
+            VStack{
+                ZStack{
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(.yellow, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round, dash: [20,20]))
+                        .cornerRadius(10)
+                        .frame(width: 550, height: 100)
+                    Text("Best features of macOS 12.3 no deb8")
+                        .bold()
+                        .font(.system(size: 28))
+                        .padding(15)
+                }
+                .padding(20)
+                ZStack{
+                    Rectangle()
+                        .fill(Color.yellow)
+                        .frame(width: 600, height: 400)
+                    HStack{
+                        Image(uiImage: #imageLiteral(resourceName: "SCR-20220418-r6u.png"))
+                            .resizable()
+                            .scaledToFit()
+                            .cornerRadius(25)
+                            .padding(40)
+                        Text("🫃")
+                            .font(.system(size: 150))
+                }
+                }
+                Text("Might apply to iPadOS 15.4 as well")
+                    .font(.system(size: 25))
+                    .foregroundColor(.white)
+            }
+        }
+    }
+}
+
+
+PlaygroundPage.current.setLiveView(MyView())
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1637}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

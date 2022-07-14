@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseFile</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/Template.playgroundpage/main.swift</string>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>func weatherAdvice(temperature: Double){
+    if temperature &lt; 0 {
+        print("Oh so cold, just like your mom.")
+    } else if temperature &gt; 100 {
+        print("Wow, so hot, just go out absolutely naked and chase all the girls away or even give them eye cancer.")
+    } else if temperature == 0{
+        print("Just nice")
+    } else {
+        print("Temperature ok")
+    }
+}
+
+weatherAdvice(temperature: 0)
+
+
+//Exercise 5
+let numbA = 5
+let numbB = 20
+
+func CheckDivisibility(numA: Int, numB: Int){
+    print("Note: This function does not check if the numbers are as invisible as your intelligence (I mean, you had to use this programme, so...)")
+    if 5%20 == 0 {
+        print("\(numA) is divisible by \(numB)!")
+    } else {
+        print("\(numA) is not divisible by \(numB). Too bad :(")
+    }
+    if 20%5 == 0{
+        print("\(numB) is divisible by \(numA)!")
+    } else{
+        print("\(numB) is indivisible by \(numA)! Too bad :(")
+    }
+}
+
+CheckDivisibility(numA: numbA, numB: numbB)
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 998}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//// Variables
+//var companyName = "Watermelon Inc."
+//var 🍉isSweet = true
+//var numberOf🍉Available = 0
+//
+//// Changing variables
+//numberOf🍉Available = 8
+//companyName = "No"
+//
+//var x = 6
+//x = 6+6
+//
+//
+////Exercise 1
+//var potatoes = 10
+//
+//var temperature: Double = 30.5
+//// Alternative answer: temperature: Int = Int(30.5) [This forces the number 30.5 to be an integer]
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 383}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>var bananas = 20
+var name = "Mdm Potato Head"
+bananas = 10
+name = "Watermelon Head Ah Boi"
+potatoes = 11
+</string>
+			<key>ModifiedRange</key>
+			<string>{384, 105}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

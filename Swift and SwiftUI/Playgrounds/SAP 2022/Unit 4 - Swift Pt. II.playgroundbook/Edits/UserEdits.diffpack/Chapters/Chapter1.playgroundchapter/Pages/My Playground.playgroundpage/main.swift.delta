@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// In function form
+func squareFunc(_ num: Int) -&gt; Int {
+    return num * num
+}
+squareFunc(5)
+
+
+// In closure form
+let squareClosure = { (num: Int) -&gt; Int in
+    return num*num
+}
+squareClosure(5)
+
+struct Car{
+    var brand: String
+    var model: String
+    var year: Int
+}
+
+
+// Version 1 (Original version)
+var listOfCars = [
+    Car(brand: "Toyota", model: "Land Cruiser", year: 1997),
+    Car(brand: "Apple", model: "iCar", year: 3107),
+    Car(brand: "Mazda", model: "6", year: 2019),
+    Car(brand: "McLaren", model: "P1", year: 2013)
+    Car(brand: "Porsche", model: "Carerra GT", year: 2006)]
+
+let sortingFunction = {(c1: Car, c2: Car) -&gt; Bool in
+    if c1.year &lt; c2.year{
+        return true
+    }else{
+        return false
+    }
+}
+
+let sortedCars = listOfCars.sorted(by: sortingFunction)
+
+// Version 2 (Combined sortedCars and sortingFunction)
+var listOfCars = [
+    Car(brand: "Toyota", model: "Land Cruiser", year: 1997),
+    Car(brand: "Apple", model: "iCar", year: 3107),
+    Car(brand: "Mazda", model: "6", year: 2019),
+    Car(brand: "McLaren", model: "P1", year: 2013),
+    Car(brand: "Porsche", model: "Carerra GT", year: 2006)]
+
+let sortedCars = listOfCars.sorted(by: {(c1: Car, c2: Car) -&gt; Bool in
+    if c1.year &lt; c2.year{
+        return true
+    }else{
+        return false
+    }
+})
+
+print(sortedCars)
+
+// Version 3 (Changed if/else statement to return statement)
+var listOfCars = [
+    Car(brand: "Toyota", model: "Land Cruiser", year: 1997),
+    Car(brand: "Apple", model: "iCar", year: 3107),
+    Car(brand: "Mazda", model: "6", year: 2019),
+    Car(brand: "McLaren", model: "P1", year: 2013),
+    Car(brand: "Porsche", model: "Carerra GT", year: 2006)]
+
+let sortedCars = listOfCars.sorted(by: {(c1: Car, c2: Car) -&gt; Bool in
+    return c1.height&lt;c2.height
+})
+
+print(sortedCars)
+
+// Version 4 (Removed (c1,c2), removed return statement)
+var listOfCars = [
+    Car(brand: "Toyota", model: "Land Cruiser", year: 1997),
+    Car(brand: "Apple", model: "iCar", year: 3107),
+    Car(brand: "Mazda", model: "6", year: 2019),
+    Car(brand: "McLaren", model: "P1", year: 2013),
+    Car(brand: "Porsche", model: "Carerra GT", year: 2006)]
+
+let sortedCars = listOfCars.sorted{ 
+    $0.height&lt;$1.height
+}
+
+print(sortedCars)
+
+    // Exercise 1
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 2254}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

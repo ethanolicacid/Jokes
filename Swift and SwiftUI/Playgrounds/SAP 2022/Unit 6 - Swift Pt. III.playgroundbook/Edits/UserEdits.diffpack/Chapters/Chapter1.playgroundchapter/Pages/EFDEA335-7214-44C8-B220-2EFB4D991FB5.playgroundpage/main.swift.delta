@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseFile</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/Template.playgroundpage/main.swift</string>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>struct Car{
+    var name: String
+    var year: Int
+    var displacement: Double?
+    
+    func selfDescribe(){
+        if let displacement = displacement{
+            print("THISSS is a \(year) \(name). It has a \(displacement) litre engine.")
+        }else{
+            print("THISSS is a \(year) \(name).")
+    }
+        
+    }
+}
+
+var car0 = Car(name: "Toyota Camry", year: 2017, displacement: 2.5)
+var car1 = Car(name: "Mitsubitshi Golf Cart", year: 2012, displacement: nil)
+
+car0.selfDescribe()
+car1.selfDescribe()
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 522}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
