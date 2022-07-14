@@ -21,9 +21,10 @@ struct ContentView: View {
     
     @State var isFeedbackPresented = false
     
-    @State var isFeedbackPositive = false
     @State var isFeedbackResponsePresented = false
+    @State var isFeedbackPositive = false
     
+    @State var punchlineSize: CGFloat = 0.1
     var body: some View {
         ZStack{
             Color(.systemBackground)
@@ -42,8 +43,10 @@ struct ContentView: View {
                         .padding()
                     Spacer()
                     Button{
-                        print("Button tapped")
-                        showPunchline = true
+                        withAnimation{
+                            print("Button tapped")
+                            showPunchline = true
+                        }
                     } label:{
                         Text("Then?")
                             .font(.title2)
@@ -61,7 +64,12 @@ struct ContentView: View {
                     HStack{
                         Text(jokesList[currentJoke % jokesList.count].punchline)
                             .padding()
-                            .font(.title3)
+                            .scaleEffect(punchlineSize)
+                            .onAppear{
+                                withAnimation(.easeInOut(duration: 0.5)){
+                                    punchlineSize = 1.1
+                                }
+                            }
                         Spacer()
                         Button{
                             print("User pressed for suicide punchline")
@@ -91,9 +99,16 @@ struct ContentView: View {
             Alert(title: Text("Did you like that joke?"),
                 primaryButton: .default(Text("It was amazing")){
                 print("User is good")
+                isFeedbackPositive = true
+                isFeedbackResponsePresented = true
             }, secondaryButton: .default(Text("I need to vomit")){
                 print("User is rubbish")
+                isFeedbackPositive = false
+                isFeedbackResponsePresented = true
                 })
+        }
+        .sheet(isPresented: $isFeedbackResponsePresented){
+            FeedbackResponseView(isPositive: isFeedbackPositive)
         }
     }
 }

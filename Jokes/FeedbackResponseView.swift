@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct FeedbackResponseView: View {
+    
+    var isPositive: Bool
+    
     var body: some View {
         VStack{
-            Image("happy")
+            Image(isPositive ? "happy":"sad")
                 .resizable()
                 .scaledToFit()
-            Text("You are amazing!")
+                .padding(20)
+            Text(isPositive ? "You are an excellent member of society!":"Even plastic waste is better than you")
                 .font(.title3)
                 .padding()
         }
@@ -22,6 +26,7 @@ struct FeedbackResponseView: View {
 
 struct FeedbackResponseView_Previews: PreviewProvider {
     static var previews: some View {
-        FeedbackResponseView()
+        FeedbackResponseView(isPositive: true)
+        FeedbackResponseView(isPositive: false)
     }
 }
